@@ -1,3 +1,7 @@
+ * {
+  box-sizing: border-box;
+}
+ 
  body {
            background-image: url("fondo.png");
 
@@ -25,9 +29,10 @@
             margin: 20px auto;
             padding: 10px;/*ADENTRO*/
             width: 700px;/*ANCHO*/
+            max-width: 90%;
             border-radius: 12px;
             text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
         .card img {
               width: 100%;
@@ -44,17 +49,20 @@
          .btn {
             background-color:#b6f500;
             color: black;
-            padding: 10px;
-            display: inline-block;
-            margin-top: 10px;
-            border-radius: 8px;
-            text-decoration: none;
+            padding: 12px 20px;
+             border-radius: 10px;
+             text-decoration: none;
+             display: inline-block;
+             transition: 0.3s;
         }
             nav {
       background-color: #2c1e4a;
       padding: 15px;
       position: sticky;
       top: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -104,4 +112,26 @@
   width: 35px;
   height: 35px;
   margin: 5px;
+}
+/* CELULARES */
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body {
+    font-size: 16px;
+  }
 }
