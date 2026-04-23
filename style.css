@@ -43,7 +43,7 @@ body > h1:first-of-type {
   animation: nebulaMove 60s linear infinite;
 }
 
-/* ✨ ESTRELLAS */
+/*ESTRELLAS */
 .stars {
   position: absolute;
   width: 100%;
@@ -244,21 +244,60 @@ section {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+
+  /* NAV */
   nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .card {
-    width: 95%;
+  /* TARJETAS */
+  .card,
+  .card2 {
+    width: 90%;
+    max-width: 100%;
+    margin: 15px auto;
   }
 
+  /* TEXTO */
   body {
     font-size: 16px;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p, ul {
+    font-size: 16px;
+  }
+
+  /* IMÁGENES */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* BOTONES */
+  .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  /* REDES */
+  .redes {
+    right: 10px;
+    bottom: 10px;
+    transform: scale(0.9);
   }
 }
-
 
 
 
