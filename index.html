@@ -8,7 +8,10 @@
     </head>
    
 <body>
-
+<div class="space">
+  <div class="nebula"></div>
+  <div class="stars"></div>
+</div>
     <h1> Bienvenido a  Novalydesigner</h1> 
     <nav>
         <a href="#inicio">Inicio</a>
@@ -48,12 +51,11 @@
             <img src="g.gif" alt="GIF animado">
         </div>
         <div class="card">
-            <p> Diseño WEB para :</p>
+            <p> Diseño Digital  :</p>
             <ul>
-                <li>Negocio </li>
-                <li>Restaurante</li>
-                <li>Empesas</li>
-                <li>Emprendedores</li>   
+                <li>Diseño páginas web personalizadas </li>
+                <li>Páginas para negocios y emprendimientos</li>
+                <li>Mejora de presencia digital</li>   
             </ul>
             <p> Y próximamente tendremos más servicios para ti.....</p>
         </div>
@@ -90,7 +92,8 @@
                 <li>Invitación interactiva: $100.00 mxn </li>
                 <li>Pases digitales+ invitacion tipo pagina web: depende del número de invitados </li>
                 </ul>
-        <div class2="card">
+        </div>
+        <div class="card2">
             <p>Tu pagina invitación interactiva puede incluir </p>
             <ul>
                 <li>Información del evento</li>
@@ -106,11 +109,19 @@
         </div>
         
         <div class="card2">
-            <h1>Paginas web para tu negocio </h1>
-            <p>Hacemos paginas web para tu negocio.
-            <p>Haz crecer tu marca y permite que tus cliente te encuentren fácilmente</p>
-            <p>Precios desde $200.00 mxn </p>
-             </div>
+
+            <h1>Páginas web</h1>
+            <p>Diseñamos sitios web modernos, rápidos y atractivos para que tu marca destaque en internet.</p>
+            <p>Haz que tus clientes te encuentren fácilmente y confíen en tu negocio desde el primer vistazo.</p>
+            <p>Precios accesibles desde $200.00 MXN</p>
+                <ul>
+                    <li>Diseño personalizado: acorde a tematicas o paleta de colores</li>
+                    <li>Secciones personalizadas: inicio, servicios, galería, contacto, etc.</li>
+                    <li>Integración de redes sociales</li>
+                    <li>Asesoría en contenido y estructura</li>     
+                </ul>
+        </div>
+
     </section>
     <!-- Termina sección servicios  -->
 
@@ -119,14 +130,54 @@
         <div class="card">
             <h1>Galería</h1>
             </div>
+
+ <div class="card">
+            <h2>Combo galáctico </h2>
+            <p>pases digitales + invitación tipo pagina web</p>
+            <video width="60%" controls>
+            <source src="web3.mp4" type="video/mp4">
+            </video>
+            <p>Desde$100.00 mxn </p>
+            <a class="btn" href="https://novalydesignerdemo3.my.canva.site/demoblue">Ver invitación muestra</a>
+            </div>
+
+
             <div class="card">
             <h2>Invitación interactiva </h2>
             <video width="60%" controls>
             <source src="web.mp4" type="video/mp4">
             </video>
-            <p>Por tan solo $100.00 mxn </p>
+            <p>Por tan solo $100.00 mxn  </p>
             <a class="btn" href="https://daly26.my.canva.site/invitaci-nmuestranovaly">Ver invitación muestra</a>
             </div>
+
+
+   
+            <div class="card">
+            <h2>Invitación interactiva </h2>
+            <video width="60%" controls>
+            <source src="web2.mp4" type="video/mp4">
+            </video>
+            <p>Por tan solo $100.00 mxn </p>
+            <a class="btn" href="https://novalydesignerdemo3.my.canva.site/">Ver invitación muestra</a>
+            </div>
+
+<div class="card">
+            <h2>Invitación XV demo mini video </h2>
+            <video width="50%" controls>
+            <source src="dulce.mp4" type="video/mp4">
+            </video>
+            <p>Por tan solo $50.00 mxn </p>
+            <p>Tu invitación incluye :</p>
+            <ul>
+                <li>Diseño personalizado acorde  al tema de la fiesta</li>
+                <li>Datos del evento</li>
+                <li>Datos de la ceremonia </li>
+                <li>Mensajes especiales </li>
+                <li>Ubicación del evento </li>
+            </ul>
+          
+         </div>
 
         <div class="card">
             <h2>Invitación XV demo mini video </h2>
@@ -160,6 +211,9 @@
             </ul>
         </div>
     
+         
+
+
     </section>
     <!-- Termina sección galería  -->
 
@@ -170,10 +224,14 @@
             <p>Tiktok: <a class="btn" href="https://www.tiktok.com/@novalydesigner?_r=1&_t=ZS-955Qn2S4RS">Tiktok</a></p>
             <p>Instagram: <a class="btn" href="https://www.instagram.com/novalydesigner?igsh=Zzc1NHNiZ3Y5OTJi">Instagram</a></p> 
             <p>Facebook: <a class="btn" href="https://www.facebook.com/share/1AQHmDWB8H/">Facebook</a></p>
+            <p>Correo electrónico: <a class="btn" href="mailto: novalydesigner@gmail.com">novalydesigner@gmail.com</a></p>
+        
         </div>
     </section>
     <!-- Termina sección contacto  -->
-    
+
+  
+
     <!-- botones flotantes de redes sociales -->
     <div class="redes">
         <a href="https://www.instagram.com/novalydesigner?igsh=Zzc1NHNiZ3Y5OTJi" target="_blank"> <img src="i.png" alt="instagram"></a>
@@ -188,7 +246,20 @@
     <footer>
         <p>© 2026 Novalydesigner</p>
     </footer>
+<script>
+const starsContainer = document.querySelector(".stars");
 
+for (let i = 0; i < 150; i++) {
+  let star = document.createElement("div");
+  star.classList.add("star");
+
+  star.style.top = Math.random() * 100 + "%";
+  star.style.left = Math.random() * 100 + "%";
+  star.style.animationDuration = (Math.random() * 2 + 1) + "s";
+
+  starsContainer.appendChild(star);
+}
+</script>
 </body>
 
 
